@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Code Lab | Корпоративный AI для защищённых систем</title>
+  <meta
+    name="description"
+    content="Quantum Code Lab проектирует корпоративные AI-решения для баз знаний, автоматизации запросов, интеграции с внутренними системами и безопасной работы с конфиденциальными данными."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-vignette" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Quantum Code Lab">
+      <span class="brand-mark"></span>
+      <span class="brand-copy">
+        <strong>Quantum Code Lab</strong>
+        <small>Corporate AI Systems</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="#about">О компании</a>
+      <a href="#services">Услуги</a>
+      <a href="#product">Продукт</a>
+      <a href="#capabilities">Возможности</a>
+      <a href="#pricing">Стоимость</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">
+        <span class="sound-dot"></span>
+        Signal
+      </button>
+      <a class="button button-primary" href="#form">Оставить заявку</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <p class="hero-meta" data-reveal>Ташкент / Corporate AI / Secure Local Deployment</p>
+
+      <div class="hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">AI-решения для корпоративных систем</p>
+
+          <div class="hero-brand">
+            <span>Quantum</span>
+            <span>Code</span>
+            <span>Lab</span>
+          </div>
+
+          <h1>Корпоративный AI для внутренних знаний, запросов и защищённых процессов</h1>
+
+          <p class="hero-text">
+            Мы проектируем интеллектуальные системы для компаний, которым важны скорость
+            обработки запросов, доступ к внутренним знаниям, интеграция с корпоративной
+            инфраструктурой и безопасная работа с конфиденциальными данными.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contacts">Связаться с нами</a>
+            <a class="button button-secondary" href="#services">Услуги</a>
+            <a class="button button-ghost" href="#form">Оставить заявку</a>
+          </div>
+
+          <div class="hero-metrics">
+            <article>
+              <strong data-counter="12">0</strong>
+              <span>модулей в продукте</span>
+            </article>
+            <article>
+              <strong data-counter="8">0</strong>
+              <span>сценариев применения</span>
+            </article>
+            <article>
+              <strong data-counter="24">0</strong>
+              <span>часа на реакцию команды</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-stage" data-reveal>
+          <div class="stage-core">
+            <div class="stage-ring stage-ring-lg"></div>
+            <div class="stage-ring stage-ring-md"></div>
+            <div class="stage-ring stage-ring-sm"></div>
+            <div class="stage-beam"></div>
+
+            <div class="stage-center">
+              <span>Quantum Code Lab</span>
+              <strong>AI Core</strong>
+              <small>secure knowledge orbit</small>
+            </div>
+
+            <div class="stage-tag tag-a">Internal Knowledge</div>
+            <div class="stage-tag tag-b">Service Desk</div>
+            <div class="stage-tag tag-c">Security</div>
+            <div class="stage-tag tag-d">Jira</div>
+            <div class="stage-tag tag-e">Client Chat</div>
+            <div class="stage-tag tag-f">Internal Systems</div>
+          </div>
+
+          <div class="stage-caption">
+            <p>Signal layer</p>
+            <strong>Corporate Knowledge Nexus</strong>
+            <span>Собирает знания, отвечает в рамках политики, маршрутизирует сложные кейсы и работает в корпоративном контуре.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section manifesto" id="about">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">О компании</p>
+        <h2>Мы создаём корпоративный AI как рабочий инструмент компании, а не как витринную демонстрацию технологий.</h2>
+      </div>
+
+      <div class="manifesto-grid">
+        <div class="manifesto-quote" data-reveal>
+          <p>Качество. Ответственность. Доверие. Архитектура под реальную инфраструктуру заказчика.</p>
+        </div>
+
+        <div class="manifesto-text" data-reveal>
+          <p>
+            Quantum Code Lab — IT-компания, специализирующаяся на автоматизации бизнес-процессов
+            и разработке AI-решений для корпоративных систем. Мы предлагаем как готовые решения,
+            так и индивидуальные продукты с учётом задач и требований конкретного заказчика.
+          </p>
+          <p>
+            Для каждой компании мы подбираем наиболее подходящий формат решения, опираясь на её
+            внутренние процессы, инфраструктуру и требования к безопасности. Наша цель — не
+            “добавить AI”, а встроить его туда, где он создаёт измеримую практическую пользу.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section system" id="services">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">Услуги</p>
+        <h2>Полный цикл: от определения формата решения до сопровождения внедрённой системы.</h2>
+      </div>
+
+      <div class="system-layout">
+        <div class="system-sticky" data-reveal>
+          <p>Каждая услуга подчинена одной задаче: выстроить рабочий корпоративный AI-контур, совместимый с процессами, доступами и внутренними сервисами компании.</p>
+        </div>
+
+        <div class="system-list">
+          <article class="system-row" data-reveal>
+            <span>01</span>
+            <div>
+              <h3>Консультация</h3>
+              <p>Помогаем определить оптимальный формат AI-решения с учётом задач бизнеса, внутренних процессов и требований к безопасности.</p>
+            </div>
+          </article>
+          <article class="system-row" data-reveal>
+            <span>02</span>
+            <div>
+              <h3>Разработка продуктов и решений</h3>
+              <p>Предлагаем готовые AI-решения для корпоративной среды, а также создаём индивидуальные продукты под задачи заказчика.</p>
+            </div>
+          </article>
+          <article class="system-row" data-reveal>
+            <span>03</span>
+            <div>
+              <h3>Интеграция с внутренними системами</h3>
+              <p>Интегрируем AI-решения с действующими корпоративными сервисами, внутренними порталами, рабочими инструментами и цифровыми платформами компании.</p>
+            </div>
+          </article>
+          <article class="system-row" data-reveal>
+            <span>04</span>
+            <div>
+              <h3>Техническая поддержка</h3>
+              <p>Оперативно рассматриваем запросы, оказываем техническую помощь и сопровождаем развитие внедрённого решения.</p>
+            </div>
+          </article>
+          <article class="system-row" data-reveal>
+            <span>05</span>
+            <div>
+              <h3>Гибкая команда</h3>
+              <p>Глубоко изучаем задачу клиента и предлагаем решение, которое создаёт практическую ценность для бизнеса.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section command-core" id="product">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">Основной продукт</p>
+        <h2>Корпоративная AI-база знаний — управляемое ядро ответов, маршрутизации и доступа к информации.</h2>
+      </div>
+
+      <div class="command-layout">
+        <div class="command-copy" data-reveal>
+          <p>
+            Корпоративная AI-база знаний — это интеллектуальная система, работающая на основе
+            загруженных и обученных данных компании. Решение позволяет отвечать на вопросы
+            пользователей в рамках утверждённой базы знаний, ускорять доступ к информации и
+            автоматизировать часть внутренних и внешних коммуникаций.
+          </p>
+          <p>
+            Система может использоваться как внутри компании, так и во внешних цифровых каналах.
+            Она способна выполнять функцию базы знаний для сотрудников, а также работать в
+            чат-платформах на сайте и в мобильном приложении, отвечая на вопросы клиентов в
+            пределах доступной области знаний.
+          </p>
+        </div>
+
+        <aside class="knowledge-map" data-reveal>
+          <div class="knowledge-node node-core">
+            <strong>AI-База</strong>
+            <span>ядро знаний</span>
+          </div>
+          <div class="knowledge-node node-portal">
+            <strong>Портал</strong>
+            <span>внутри компании</span>
+          </div>
+          <div class="knowledge-node node-web">
+            <strong>Сайт</strong>
+            <span>чат-платформа</span>
+          </div>
+          <div class="knowledge-node node-mobile">
+            <strong>Mobile</strong>
+            <span>быстрые ответы</span>
+          </div>
+          <div class="knowledge-node node-systems">
+            <strong>Системы</strong>
+            <span>Jira, Service Desk</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="capabilities">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">Возможности продукта</p>
+        <h2>Один продукт, но много режимов работы: ответы, интеграции, контроль доступа и безопасная маршрутизация.</h2>
+      </div>
+
+      <div class="capability-layout">
+        <div class="capability-list">
+          <button class="capability-line is-active" type="button" data-capability="0" data-reveal>
+            <strong>01</strong>
+            <span>Ответы на основе обученных данных</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="1" data-reveal>
+            <strong>02</strong>
+            <span>Работа в рамках утверждённой области знаний</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="2" data-reveal>
+            <strong>03</strong>
+            <span>Внутренняя база знаний для сотрудников</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="3" data-reveal>
+            <strong>04</strong>
+            <span>Чат на сайте компании</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="4" data-reveal>
+            <strong>05</strong>
+            <span>Поддержка в мобильном приложении</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="5" data-reveal>
+            <strong>06</strong>
+            <span>Передача запроса сотруднику</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="6" data-reveal>
+            <strong>07</strong>
+            <span>Создание задач в Jira и Service Desk</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="7" data-reveal>
+            <strong>08</strong>
+            <span>Интеграция с внутренними системами</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="8" data-reveal>
+            <strong>09</strong>
+            <span>Персонализированная информация</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="9" data-reveal>
+            <strong>10</strong>
+            <span>Классификация данных по доступу</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="10" data-reveal>
+            <strong>11</strong>
+            <span>Работа на локальных серверах предприятия</span>
+          </button>
+          <button class="capability-line" type="button" data-capability="11" data-reveal>
+            <strong>12</strong>
+            <span>Безопасная работа с конфиденциальной информацией</span>
+          </button>
+        </div>
+
+        <article class="capability-detail" id="capabilityDetail" data-reveal>
+          <p class="eyebrow">Активный модуль</p>
+          <h3 class="capability-detail-title"></h3>
+          <p class="capability-detail-text"></p>
+          <div class="detail-rail">
+            <span>Secure</span>
+            <span>Integrated</span>
+            <span>Role-based</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section applications" id="use-cases">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">Сферы применения</p>
+        <h2>AI-контур легко встраивается туда, где уже есть пользователи, обращения, знания и правила доступа.</h2>
+      </div>
+
+      <div class="applications-grid">
+        <article class="application-band" data-reveal>
+          <span>01</span>
+          <div>
+            <h3>Внутренние корпоративные порталы</h3>
+            <p>Быстрый доступ сотрудников к знаниям, регламентам и процессам в единой интеллектуальной среде.</p>
+          </div>
+        </article>
+        <article class="application-band" data-reveal>
+          <span>02</span>
+          <div>
+            <h3>Поддержка сотрудников и внутренние сервисы</h3>
+            <p>Снижение нагрузки на сервисные команды и ускорение ответов по типовым внутренним запросам.</p>
+          </div>
+        </article>
+        <article class="application-band" data-reveal>
+          <span>03</span>
+          <div>
+            <h3>Корпоративные базы знаний</h3>
+            <p>AI-доступ к внутренней документации, политикам, инструкциям и обученным материалам компании.</p>
+          </div>
+        </article>
+        <article class="application-band" data-reveal>
+          <span>04</span>
+          <div>
+            <h3>Сайт компании и онлайн-чат для клиентов</h3>
+            <p>Контролируемые ответы внешним пользователям в пределах разрешённой области знаний.</p>
+          </div>
+        </article>
+        <article class="application-band" data-reveal>
+          <span>05</span>
+          <div>
+            <h3>Мобильные приложения с чат-поддержкой</h3>
+            <p>Предоставление быстрых ответов пользователям внутри мобильного продукта.</p>
+          </div>
+        </article>
+        <article class="application-band" data-reveal>
+          <span>06</span>
+          <div>
+            <h3>Автоматизация первичной обработки обращений</h3>
+            <p>Классификация входящих запросов и подготовка маршрута до участия сотрудника.</p>
+          </div>
+        </article>
+        <article class="application-band" data-reveal>
+          <span>07</span>
+          <div>
+            <h3>Service Desk и helpdesk-процессы</h3>
+            <p>Создание задач, передача кейсов и ускорение реакции на типовые инциденты и запросы.</p>
+          </div>
+        </article>
+        <article class="application-band" data-reveal>
+          <span>08</span>
+          <div>
+            <h3>Внутренние и внешние пользователи</h3>
+            <p>Единый AI-слой ответов для разных аудиторий с разграничением доступа к данным.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reasons" id="why-us">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">Почему выбирают нас</p>
+        <h2>Нам доверяют там, где ценят не только AI-возможности, но и инженерную дисциплину исполнения.</h2>
+      </div>
+
+      <div class="reason-list">
+        <article class="reason-row" data-reveal>
+          <span>01</span>
+          <h3>Качественный подход</h3>
+          <p>Разрабатываем надёжные и эффективные решения, ориентированные на реальные бизнес-задачи.</p>
+        </article>
+        <article class="reason-row" data-reveal>
+          <span>02</span>
+          <h3>Быстрая коммуникация</h3>
+          <p>Оперативно взаимодействуем с клиентами и стараемся быстро реагировать на запросы.</p>
+        </article>
+        <article class="reason-row" data-reveal>
+          <span>03</span>
+          <h3>Индивидуальный подход</h3>
+          <p>Каждое решение адаптируется под структуру, процессы и требования конкретной компании.</p>
+        </article>
+        <article class="reason-row" data-reveal>
+          <span>04</span>
+          <h3>Гибкие условия</h3>
+          <p>Стоимость и формат реализации определяются индивидуально в зависимости от задач проекта.</p>
+        </article>
+        <article class="reason-row" data-reveal>
+          <span>05</span>
+          <h3>Надёжное партнёрство</h3>
+          <p>Мы ориентированы на долгосрочное сотрудничество и создание решений, приносящих бизнесу практическую пользу.</p>
+        </article>
+        <article class="reason-row" data-reveal>
+          <span>06</span>
+          <h3>Безопасность и конфиденциальность</h3>
+          <p>Наши решения могут работать в локальной инфраструктуре заказчика и поддерживают чувствительные данные.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">Стоимость</p>
+        <h2>Стоимость рассчитывается под конкретный проект, его архитектуру, пользователей и требования к защите данных.</h2>
+      </div>
+
+      <div class="pricing-shell">
+        <div class="pricing-formula" data-reveal>
+          <strong>Цена = контур + интеграции + логика + безопасность</strong>
+          <div class="pricing-factors">
+            <span>требования проекта</span>
+            <span>количество пользователей</span>
+            <span>объём интеграций</span>
+            <span>сложность бизнес-логики</span>
+            <span>требования к инфраструктуре</span>
+            <span>уровень требований к безопасности и обработке данных</span>
+          </div>
+        </div>
+
+        <div class="pricing-copy" data-reveal>
+          <p>Для получения коммерческого предложения свяжитесь с нами и кратко опишите задачи вашей компании.</p>
+          <a class="button button-primary" href="#form">Запросить расчёт</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-form" id="contacts">
+      <div class="section-intro" data-reveal>
+        <p class="eyebrow">Контакты и заявка</p>
+        <h2>Если вам нужен корпоративный AI для внутренней среды, клиентского сервиса или базы знаний, отправьте запрос.</h2>
+      </div>
+
+      <div class="contact-form-grid">
+        <div class="contact-column">
+          <div class="contact-network" data-reveal>
+            <div class="network-ring network-ring-lg"></div>
+            <div class="network-ring network-ring-sm"></div>
+            <div class="network-node node-main">QCL</div>
+            <div class="network-node node-one">AI</div>
+            <div class="network-node node-two">CRM</div>
+            <div class="network-node node-three">ERP</div>
+            <div class="network-node node-four">SD</div>
+          </div>
+
+          <ul class="contact-list" data-reveal>
+            <li><span>Телефон</span><a href="tel:+998941775859">+998 94 177 58 59</a></li>
+            <li><span>Телефон</span><a href="tel:+998905430093">+998 90 543 00 93</a></li>
+            <li><span>Telegram</span><a href="https://t.me/M_Husanov" target="_blank" rel="noreferrer">@M_Husanov</a></li>
+            <li><span>Telegram</span><a href="https://t.me/khasanov_SSh" target="_blank" rel="noreferrer">@khasanov_SSh</a></li>
+            <li><span>Email</span><a href="mailto:codelabquantum@gmail.com">codelabquantum@gmail.com</a></li>
+            <li><span>Адрес</span><strong>г. Ташкент</strong></li>
+            <li><span>Время работы</span><strong>Понедельник — Суббота, 09:00–18:00</strong></li>
+          </ul>
+        </div>
+
+        <div class="form-column" id="form" data-reveal>
+          <p class="eyebrow">Оставьте заявку</p>
+          <h3>Направьте запрос, и мы свяжемся с вами для обсуждения проекта.</h3>
+          <p class="form-lead">
+            Укажите, какие процессы вы хотите автоматизировать, нужна ли база знаний, какие
+            системы требуется интегрировать и есть ли требования к локальному размещению.
+          </p>
+
+          <form class="lead-form" id="leadForm">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+998" required>
+            </label>
+            <label>
+              <span>Сообщение</span>
+              <textarea name="message" rows="5" placeholder="Опишите задачу вашей компании" required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Отправить</button>
+            <p class="form-note" id="formNote">Заявка формируется для отправки на email компании.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Quantum Code Lab</p>
+    <span>AI-решения для корпоративных систем, знаний и защищённых внутренних процессов.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
